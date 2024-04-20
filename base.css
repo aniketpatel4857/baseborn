@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    color: #fff;
+    
+}
+::-webkit-scrollbar{
+    display: none;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    /* overflow: hidden; */
+}
+#loader{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(32,32,32);
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-50%,-50%); */
+}
+#loader-text{
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#loader-text h2,h3{
+    font-size: 1.5vw;
+    font-weight: 500;
+    transition: all ease 0.5s;
+}
+#circle-cover{
+    height: 3.1vw;
+    width: 3.1vw;
+    background-color: #000;
+    position: absolute;
+    top: 29.3%;
+    border-radius: 50%;
+    left: 29.5%;
+    transition: all ease 0.5s;
+
+
+}
+#circle{
+    height: 3vw;
+    width: 3vw;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: .5vw;
+    margin-left: 2.5vw;
+    transition: all ease 0.5s;
+
+}
+#circle i{
+    font-size: 2vw;
+    color: #000;
+}
+
+
+#page1{
+    height: 100%;
+    padding: 0 1vw;
+    /* overflow: hidden; */
+    /* width: 100vw; */
+}
+#nav{
+    height: 4vw;
+    width: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navpart-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vw;
+}
+#navpart-1 h4{
+    font-size: 1.2vw;
+}
+#navpart-2 h2{
+    font-size: 1.2vw;
+}
+
+#svg1{
+    height: 14.5vw;
+    width: 100%;
+}
+/* #big-text{
+    background-color: aqua;
+    z-index: 999 !important;
+} */
+#big-text-cover{
+    height: 14.5vw;
+    width: 100%;
+    /* background-color: #000; */
+    position: absolute;
+    display: flex;
+}
+#big-text-cover>div{
+    height: 100%;
+    width: 12.3%;
+    background-color: #000;
+    border: 1px solid #000;
+}
+#center{
+    height: 30vw;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+#center-left{
+    padding: .5vw 0;
+    height: 28vw;
+    width: 50%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#upper h2{
+    text-align: start;
+    font-size: 1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #dadada;
+}
+#lower h4{
+    text-align: start;
+    font-weight: 600;
+    font-size: 1.3vw;
+    width: 75%;
+}
+#center-right{
+    /* height:mi ; */
+    height: 100%;
+    width: 53%;
+    /* position: absolute;
+    right: 0; */
+}
+#center-right-cover{
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    background-color: #000;
+    z-index: 99;
+}
+
+.box{
+    height: 120vh;
+    width: 100%;
+    background-color: black; 
+    /* margin-bottom: 1vw; */
+    border-bottom: 1px solid #dadada;
+    padding-top: 1vw;
+
+}
+.image-box{
+    height: 90%;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-box>img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    object-fit: cover;
+    z-index: 1;
+}
+.video{
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: 99;
+    opacity: 0;
+    transition: all ease 0.5s;
+    
+    /* z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+
+}
+
+.image-box:hover .video{
+    opacity: 1;
+}
+.box h2{
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: .5vw;
+}
+.box h3{
+    font-weight: 300;
+    margin: .5vw;
+}
+#right-lower{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw;
+}
+#right-lower h3{
+    margin-bottom: 1vw;
+    font-size: 1.5vw;
+    text-transform: capitalize;
+}
+#right-lower h5{
+    /* margin-bottom: 1vw; */
+    font-size: 1vw;
+}
+
+
+@media (max-width: 600px) {
+   .box{
+    height: 50vh;
+    width: 100vw;
+    margin-top: 50%;
+    margin-left: -90%;
+   }
+   #lower h4{
+    font-size: 2vw;
+   }
+   #big-text{
+    height: 50vh;
+    width: 100vw;
+   }
+}
